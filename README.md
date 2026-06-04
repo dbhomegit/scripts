@@ -19,8 +19,8 @@ Clone the repo and make the script executable:
 ```bash
 git clone https://github.com/dbhomegit/scripts.git
 cd scripts
-chmod +x script-name.sh
-sudo ./script-name.sh
+chmod +x ubuntu-docker-install.sh
+sudo ./ubuntu-docker-install.sh
 ```
 
 Each script is self-contained and includes inline comments. Check the top of any script for specific requirements or notes before running.
