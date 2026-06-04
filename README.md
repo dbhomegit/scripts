@@ -17,7 +17,7 @@ A personal collection of scripts I've written, adapted, and tested for real-worl
 Clone the repo and make the script executable:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/scripts.git
+git clone https://github.com/dbhomegit/scripts.git
 cd scripts
 chmod +x script-name.sh
 sudo ./script-name.sh
