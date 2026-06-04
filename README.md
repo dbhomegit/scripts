@@ -8,7 +8,7 @@ A personal collection of scripts I've written, adapted, and tested for real-worl
 
 | Script | Description | OS |
 |---|---|---|
-| [`docker-install.sh`](./docker-install.sh) | Installs Docker Engine and the Compose plugin from Docker's official apt repository | Ubuntu |
+| [`ubuntu-docker-install.sh`](./ubuntu-docker-install.sh) | Installs Docker Engine and the Compose plugin from Docker's official apt repository | Ubuntu |
 
 ---
 
