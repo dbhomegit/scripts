@@ -4,7 +4,7 @@
 # from Docker's official apt repository.
 #
 # Tested on: Ubuntu 26.04 (Resolute)
-# Usage: sudo ./docker-install.sh
+# Usage: sudo ./ubuntu-docker-install.sh
 
 set -euo pipefail
 
@@ -12,11 +12,6 @@ echo "==> Removing conflicting old packages..."
 for pkg in docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc; do
     sudo apt-get remove -y "$pkg" 2>/dev/null || true
 done
-
-echo "==> Removing any old Docker repo list files..."
-sudo rm -f /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-*.list
-sudo rm -f /etc/apt/sources.list.d/docker.list
-sudo rm -f /etc/apt/sources.list.d/docker.sources
 
 echo "==> Installing prerequisites..."
 sudo apt-get update
@@ -44,9 +39,6 @@ sudo apt-get install -y \
     containerd.io \
     docker-buildx-plugin \
     docker-compose-plugin
-
-echo "==> Restarting containerd..."
-sudo systemctl restart containerd
 
 echo "==> Verifying installation..."
 sudo docker run hello-world
